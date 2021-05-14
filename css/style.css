@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  --main-dark: #14110f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+}
+
+body {
+  background: var(--main-dark);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+
+.nav-bar > ul {
+  display: flex;
+  /* justify-content: space-around; */
+  list-style: none;
+}
+
+.nav-menu {
+  margin-bottom: 20px;
+}
+
+.nav-menu > li {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.nav-options:hover {
+  text-underline-position: below;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+#logo {
+  position: absolute;
+  width: 400px;
+  top: 5%;
+  right: 10%;
+}
+
+.name {
+  color: #db4747;
+}
+
+#logo path:nth-of-type(1),
+path:nth-of-type(2),
+path:nth-of-type(7),
+path:nth-of-type(8),
+path:nth-of-type(9),
+path:nth-of-type(10),
+path:nth-of-type(11),
+path:nth-of-type(12),
+path:nth-of-type(13),
+path:nth-of-type(14),
+path:nth-of-type(15) {
+  fill: white;
+  stroke-width: 1px;
+  stroke: #ffffff;
+
+  stroke-dasharray: 2020px;
+  stroke-dashoffset: 0px;
+}
+
+#logo:hover path {
+  animation: animate-icon 2s ease forwards;
+}
+
+@keyframes animate-icon {
+  0% {
+    stroke-dashoffset: 0;
+    fill: white;
+  }
+  40% {
+    stroke-dashoffset: 2020px;
+  }
+  80% {
+    stroke-dashoffset: 4040px;
+  }
+  100% {
+    stroke-dashoffset: 4040px;
+    fill: transparent;
+  }
+}
+
+#logo path:nth-of-type(3),
+#logo path:nth-of-type(5) {
+  fill: transparent;
+  stroke: #db4747;
+  stroke-width: 1px;
+  stroke-dasharray: 369px;
+  stroke-dashoffset: 0px;
+}
+
+#logo path:nth-of-type(3) {
+  animation: animate-icon-red 2s linear forwards;
+}
+
+#logo path:nth-of-type(5) {
+  animation: animate-icon-red 2s linear forwards 1s;
+}
+
+@keyframes animate-icon-red {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 369px;
+  }
+  80% {
+    stroke-dashoffset: 738px;
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 738px;
+    fill: #db4747;
+  }
+}
+
+.left-side {
+  position: absolute;
+  top: 20%;
+  left: 20px;
+}
+
+.left-side h1 {
+  font-size: 70px;
+}
+
+.main-btn {
+  margin-top: 20px;
+  font-size: 18px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.main-btn:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+i {
+  margin-right: 10px;
+}
