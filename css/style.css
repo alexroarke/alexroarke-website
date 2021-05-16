@@ -93,7 +93,7 @@ body {
 }
 
 .red-fill path {
-  animation: animate-icon-red 2 linear forwards 1s;
+  animation: animate-icon-red 2s linear forwards 1s;
 }
 
 @keyframes animate-icon-red {
